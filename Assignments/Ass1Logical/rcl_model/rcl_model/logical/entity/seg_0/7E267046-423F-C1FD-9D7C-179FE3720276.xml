@@ -23,7 +23,6 @@
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -31,4 +30,18 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="240AAA93-A976-32D5-6550-1036FF1E5799" name="BRANCH PK">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-14 13:08:58 UTC</createdTime>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
