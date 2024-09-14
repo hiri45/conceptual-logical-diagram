@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="rcl_model" id="924E7922-524B-A1C8-3A00-40CD4016B6A2" version="3.5">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-14 02:40:45 UTC</createdTime>
+<ownerDesignName>rcl_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>924E7922-524B-A1C8-3A00-40CD4016B6A2</designId>
+</OSDM_Design>
