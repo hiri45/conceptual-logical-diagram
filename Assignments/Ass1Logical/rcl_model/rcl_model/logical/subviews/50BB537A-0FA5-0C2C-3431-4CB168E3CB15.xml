@@ -5,12 +5,40 @@
 <createdTime>2024-09-14 02:52:31 UTC</createdTime>
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
-<showLegend>false</showLegend>
-<showLabels>false</showLabels>
+<showLegend>true</showLegend>
+<showLabels>true</showLabels>
 <showRelAttributes>false</showRelAttributes>
 <gridEnabled>false</gridEnabled>
 <showGrid>false</showGrid>
 <diagramColor>-1</diagramColor>
 <display>false</display>
-<notation>1</notation>
+<notation>2</notation>
+<showAllDetails>false</showAllDetails>
+<showElements>true</showElements>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="24D78BFD-8B53-FDBE-FB92-28421B3E03D1" otype="Entity" vid="555E790A-0EB1-8A12-36E9-B99D8B0747DC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="311" width="130" height="40"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="3E55B8D4-3A0D-B7E6-256C-B053B9762467" otype="Entity" vid="6C49A004-FD72-D982-036C-41A361D679B9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="323" y="170" width="117" height="40"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="65CD2F4F-23EB-987A-BF4F-6C80AAC7FC51" otype="Entity" vid="664BF1DD-71EA-7641-8094-C2984EE47EFF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="92" y="184" width="117" height="40"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVLegend" oid="B6931C27-3DB1-778A-BB4F-B83BFF508AD3" otype="Legend" vid="34A4E9DB-93FC-0C93-C0FC-4617605038B2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="10" y="10" width="232" height="135"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="DE547D10-7B01-B5AD-6CE2-FA2A0B477849" otype="Entity" vid="B37674D3-FA40-84EF-8D42-E2BB27CCF3AD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="478" y="106" width="94" height="40"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="EDFCA3DD-96F8-C323-FFE3-7BB622C84BF7" otype="Entity" vid="ADCB8443-16C4-C735-DCE2-7420D9497328">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="309" y="315" width="102" height="40"/>
+</OView>
+</objectViews>
 </Diagram>
