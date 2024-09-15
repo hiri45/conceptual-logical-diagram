@@ -18,7 +18,7 @@
 <Attribute name="book_copyid" id="7B98C994-144B-B6FF-7032-71F3FB58380A">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:19:32 UTC</createdTime>
-<commentInRDBMS><![CDATA[book copy id ]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Book copy id ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -28,6 +28,21 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="book_purchasing price " id="B03BB209-04C7-D9D1-7615-64707C446BA1">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:24:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book purchasing price ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

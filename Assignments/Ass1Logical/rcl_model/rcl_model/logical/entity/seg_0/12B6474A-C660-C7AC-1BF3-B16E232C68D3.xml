@@ -14,4 +14,19 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reservation_date_time " id="3A7C87AA-B6A0-1FE3-A233-9F94B7A16ADD">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:29:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reservation date and time ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
 </Entity>

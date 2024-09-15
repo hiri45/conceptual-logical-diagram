@@ -15,10 +15,49 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="loan_start_date" id="22242F00-3BCB-7830-83F0-567D57C7EF01">
+<Attribute name="loan_start_datetime " id="22242F00-3BCB-7830-83F0-567D57C7EF01">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:24:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[loan start date ]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Loan start date time ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_due date " id="19EAA075-CBAD-5E20-9208-D3838E16EE3E">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:26:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan due date ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_return_date " id="8365B7A5-0587-7C88-25D2-202221B84BA8">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:26:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan return date ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_return_date_time" id="B208F276-454C-D1C0-1F17-68BC7C25A2F4">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:27:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan return date and time ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>

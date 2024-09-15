@@ -18,7 +18,7 @@
 <Attribute name="author_id" id="9120993A-4588-3A4E-F2A5-2B69DD17260A">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:34:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[author id ]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Author id ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -28,6 +28,34 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="author_firstname " id="7DBCCB74-504B-57F7-ED56-7B98A25591D1">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:21:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Author first name ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="author_lastname " id="1693B244-95BC-378F-71B7-39D671703E1A">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:22:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Author last name ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

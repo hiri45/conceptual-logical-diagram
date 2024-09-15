@@ -29,6 +29,20 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="bookstatus_name " id="6CFA7464-D589-E998-ABAB-7C7568E05D9E">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:30:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book Status Name ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8C208A4F-C104-9500-C517-62BD2C399D40" name="BOOKSTATUS PK">
