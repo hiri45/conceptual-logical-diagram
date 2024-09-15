@@ -16,6 +16,10 @@
 <showAllDetails>false</showAllDetails>
 <showElements>true</showElements>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="12B6474A-C660-C7AC-1BF3-B16E232C68D3" otype="Entity" vid="F51F7C21-DCD5-E64C-93C2-06E313F91007">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="131" y="487" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="186DE5CC-123C-4010-CEC3-0EABB849E3FC" otype="Entity" vid="92A2DD7A-378D-BA5A-6023-A1CE8F6DA159">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="529" y="425" width="160" height="67"/>
@@ -32,6 +36,10 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="323" y="170" width="117" height="40"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="402EAFDB-0732-7EDB-4C7B-930A2581C306" otype="Entity" vid="2B7404A5-75E0-7842-864C-7241EFDF3B25">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="375" y="527" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4BDA69B7-CFF1-32D2-2353-2B4BE38C7693" otype="Entity" vid="EBC450B1-BC00-9763-BA5D-2B71C0A4CDFA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="692" y="303" width="171" height="49"/>
@@ -47,6 +55,10 @@
 <OView class="oracle.dbtools.crest.swingui.TVLegend" oid="B6931C27-3DB1-778A-BB4F-B83BFF508AD3" otype="Legend" vid="34A4E9DB-93FC-0C93-C0FC-4617605038B2">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="10" y="10" width="246" height="135"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D1A7A493-BB80-8325-59E5-98E8EE90C951" otype="Entity" vid="4D50A064-9F5E-9D96-1599-737419A3DA6B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="167" y="414" width="183" height="26"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D3B30F58-29F6-237C-ED6C-9873C1CA3BA5" otype="Entity" vid="5A3E01AE-2778-1342-983F-DFA845675D24">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
