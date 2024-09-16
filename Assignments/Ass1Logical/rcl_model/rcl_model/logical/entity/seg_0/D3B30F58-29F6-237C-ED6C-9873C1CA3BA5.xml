@@ -29,6 +29,118 @@
 <dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="borrower_firstname" id="C1D83B1E-EE4C-5FD4-6DAF-A8C21CF48DC4">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:43:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[the first name of the borrower]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_lastname" id="68B168F4-9663-5090-3CD3-FF8F514DCA31">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:43:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[the lastname of the borrower]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_flag" id="FCC26099-BD48-4A41-9C3F-923CFD047F8E">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:44:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[a flag to represent if on counter reserve or not]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_contact_phoneno" id="669EA459-FBC0-C656-C494-5748063A66D3">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:47:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[contact phone number of borrower]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_postcode" id="8A055CA1-650E-A4A9-AA60-35483D2D2446">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:47:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[post code of the borrower]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_state" id="9D9F8303-5674-4BB5-1666-E3316299B5D9">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[the state the borrower is in]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_street_number" id="EA7AA8AB-40F2-B238-D041-0AEAB7AB9C01">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:49:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[the street number the borrower is in]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_street_description" id="FD616CF3-6939-F7BB-FD1F-7A5AEECC1A94">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:49:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[the description of the borrower street]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9A1F267E-14BF-A9C7-6EAF-7E65C5D6CD1A" name="BORROWER PK">

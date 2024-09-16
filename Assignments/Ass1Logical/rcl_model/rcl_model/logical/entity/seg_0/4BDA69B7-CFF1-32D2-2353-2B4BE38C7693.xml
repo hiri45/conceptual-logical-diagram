@@ -29,6 +29,48 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="manager_firstname" id="61F75F55-F79C-B38C-F936-B61DA3F4F3FB">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:36:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name of the manager]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manager_lastname" id="5F726D31-49E2-2060-0252-F4532E502173">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:36:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name of the manager]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manager_contact_phoneno" id="41566D3B-953B-1499-D856-5234893273BE">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:36:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number of the manager]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8B1CE216-3939-2758-9376-1BA7A80521D1" name="MANAGER PK">
