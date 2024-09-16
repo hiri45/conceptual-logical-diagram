@@ -29,6 +29,48 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="borrowerclass_name" id="BDE9C153-F3C5-6FAE-E097-B4B523950773">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:44:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the borrower class]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrowerclass_max_bookloans" id="3EEDEA04-AC79-FC37-2CC3-B433F04D52AA">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:44:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[maximum number of book loans for borrower class]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrowerclass_loanperiod" id="1401DAB0-AB70-0F7D-C728-CC936570751C">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:45:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[the loan period for borrower class]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="630826AB-29DC-94A7-52AD-6DB073255EBD" name="BORROWERCLASS PK">

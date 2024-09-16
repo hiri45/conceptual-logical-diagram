@@ -71,6 +71,22 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="branch_code" id="648BAC0E-17AF-077C-0866-01A217A0FA55">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:37:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
+<generatorID>392B933B-91A4-313F-65DB-82BDEB97089D</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8B1CE216-3939-2758-9376-1BA7A80521D1" name="MANAGER PK">

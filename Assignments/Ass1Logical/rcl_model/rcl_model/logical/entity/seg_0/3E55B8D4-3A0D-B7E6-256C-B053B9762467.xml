@@ -155,6 +155,22 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="publisher_id" id="CABF1555-F498-E913-3FE7-5DF78DA9CEDB">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:23:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[the id of the publisher which takes 6 digits]]></commentInRDBMS>
+<generatorID>AD280B46-7FC6-EA77-CBD3-598A5C527200</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>6996DE57-28DF-5D5D-BF6D-C93927657942</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D7A84B12-0751-B9F5-523D-50E140B4EF6E" name="CATALOGUE PK">

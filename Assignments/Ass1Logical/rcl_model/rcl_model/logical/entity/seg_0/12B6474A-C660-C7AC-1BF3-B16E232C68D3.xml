@@ -42,7 +42,53 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="42EB4CB8-57BF-7AE7-177E-CD1C65B84296">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:31:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
+<generatorID>BFBE2E6B-D1C9-8D35-A37D-9DCB73517AB2</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>AAF16123-923A-5BDD-A619-6CB63BFBD875</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_no" id="1EE1663D-EFE8-87E8-4480-E98324D395F2">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[6-digit number which identifiies borrower]]></commentInRDBMS>
+<generatorID>727EAB85-6432-1BD5-709E-393AC9EC7FF6</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>F8D49DC5-D3DF-7E36-F315-AC7AF3498981</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BA7D428B-9524-E3B8-6EE6-5D1BEC01A1A2" name="RESERVATION PK">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:35:34 UTC</createdTime>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EE1663D-EFE8-87E8-4480-E98324D395F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -81,6 +81,38 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="7099F479-9459-B068-9EC3-B85F19B2C7F3">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:31:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
+<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>AAF16123-923A-5BDD-A619-6CB63BFBD875</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_no" id="EB19FF9E-0E29-2E43-63A7-7442B3028FFD">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:42:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[6-digit number which identifiies borrower]]></commentInRDBMS>
+<generatorID>AC40125A-8288-3385-8F0D-2DFDE67AE2EA</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>F8D49DC5-D3DF-7E36-F315-AC7AF3498981</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

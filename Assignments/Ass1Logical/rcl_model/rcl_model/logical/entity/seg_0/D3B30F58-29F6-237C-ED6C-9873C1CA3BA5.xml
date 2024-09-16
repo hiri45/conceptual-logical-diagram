@@ -141,6 +141,38 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="branch_code" id="F9350D2E-3CCD-8786-6C04-489C74B2E76D">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:34:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
+<generatorID>72F46AD2-0CDA-3E04-C9F1-202E667C9F9C</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrowerclass_id" id="FD08E71A-9602-C73C-DB2A-392B943BA12A">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[the id of the borrowerclass]]></commentInRDBMS>
+<generatorID>A193C2E2-60B1-1E26-4706-FDADB028FAAE</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>57FBE2B6-2ACB-63DC-24EE-5A0DD414E24B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9A1F267E-14BF-A9C7-6EAF-7E65C5D6CD1A" name="BORROWER PK">

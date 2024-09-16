@@ -71,6 +71,38 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="lga_code" id="E3F09D9F-E82B-5FCC-A123-A928D739DBAA">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:32:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[7-digit number for lga]]></commentInRDBMS>
+<generatorID>A8779F68-BDDA-925D-072A-34927E325237</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>B3B51F00-5CEB-9E42-DBA6-CBD66C3EB491</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manager_id" id="868DA998-FB96-4F25-C723-D967757AB64A">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:38:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[7-digit number which identifies manager]]></commentInRDBMS>
+<generatorID>90A9588B-DBD4-FBE6-A964-6E91A97A50B5</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>1A699BF3-3C0D-EF08-2280-301883BE5272</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="240AAA93-A976-32D5-6550-1036FF1E5799" name="BRANCH PK">
