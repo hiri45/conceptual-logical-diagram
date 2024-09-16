@@ -67,6 +67,22 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="book_copyid" id="3AC9D36E-C7A7-A642-084A-2F276E536926">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 03:35:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book copy id ]]></commentInRDBMS>
+<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>7B98C994-144B-B6FF-7032-71F3FB58380A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="03610955-5EB8-DBFB-18E0-FDA101E0BA52" name="LOAN PK">

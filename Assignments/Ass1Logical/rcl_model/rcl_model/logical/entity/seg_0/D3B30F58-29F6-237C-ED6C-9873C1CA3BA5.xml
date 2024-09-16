@@ -95,9 +95,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>8</dataTypeSize>
-<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="borrower_state" id="9D9F8303-5674-4BB5-1666-E3316299B5D9">
 <createdBy>Hirun</createdBy>

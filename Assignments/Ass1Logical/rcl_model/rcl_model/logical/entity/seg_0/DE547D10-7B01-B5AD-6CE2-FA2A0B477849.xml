@@ -43,6 +43,22 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="catal_ddnco" id="D8D73562-926D-FF33-63CF-C78656950F11">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 03:40:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dewey Decimal Call Number ]]></commentInRDBMS>
+<generatorID>D97DB9B6-528E-E25C-C2D7-E81B173E2657</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>3B1F3315-B5ED-44C5-8348-C496B5A2CB53</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="75D8A1F0-C69B-5A04-4858-E13D9AF33DD5" name="ISBN PK">

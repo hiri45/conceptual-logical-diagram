@@ -28,5 +28,21 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="book_copyid" id="5B93C54C-5B3C-D54A-F757-9ED66D3A65FE">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 03:38:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book copy id ]]></commentInRDBMS>
+<generatorID>BFBE2E6B-D1C9-8D35-A37D-9DCB73517AB2</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>7B98C994-144B-B6FF-7032-71F3FB58380A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 </Entity>

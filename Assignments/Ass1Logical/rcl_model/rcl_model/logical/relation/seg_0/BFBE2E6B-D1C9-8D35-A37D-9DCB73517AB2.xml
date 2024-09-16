@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="book_reservation_fk" directorySegmentName="seg_0" id="BFBE2E6B-D1C9-8D35-A37D-9DCB73517AB2">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 03:38:06 UTC</createdTime>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<sourcePk>7EA4E128-47C1-A3BB-15CC-0193DA80F308</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>65CD2F4F-23EB-987A-BF4F-6C80AAC7FC51</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>12B6474A-C660-C7AC-1BF3-B16E232C68D3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

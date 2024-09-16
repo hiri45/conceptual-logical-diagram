@@ -44,6 +44,38 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,6,2</ownDataTypeParameters>
 </Attribute>
+<Attribute name="bookstatus_id" id="A7569661-67F8-70A2-CC6B-773FB6C36289">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 03:22:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[book status id ]]></commentInRDBMS>
+<generatorID>156576EA-8D0F-FEEF-01C8-B95AF23BA1DB</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>4C6C4754-70C9-2E1D-9A02-1643B42F751F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="isbn_no" id="9FA3E3E6-5F61-225F-9D6B-F0E317F7122B">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 03:39:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[13-digit International Standard Book Numbers]]></commentInRDBMS>
+<generatorID>ADFA037D-AF9D-9B33-50B6-F0B73946EA58</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>264E94B9-4E41-611B-88D5-C96866853F4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7EA4E128-47C1-A3BB-15CC-0193DA80F308" name="BOOK PK">
