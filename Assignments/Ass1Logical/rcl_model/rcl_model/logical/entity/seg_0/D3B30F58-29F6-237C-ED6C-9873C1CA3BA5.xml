@@ -60,7 +60,7 @@
 <Attribute name="borrower_flag" id="FCC26099-BD48-4A41-9C3F-923CFD047F8E">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:44:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[a flag to represent if on counter reserve or not]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[a flag to represent if borrower is banned or not]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
