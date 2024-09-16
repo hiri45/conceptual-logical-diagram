@@ -72,15 +72,16 @@
 <referedAttribute>264E94B9-4E41-611B-88D5-C96866853F4B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypePrecision>13</dataTypePrecision>
+<dataTypeSize>13</dataTypeSize>
 <ownDataTypeParameters>,13,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="branch_code" id="AAF16123-923A-5BDD-A619-6CB63BFBD875">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:31:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
-<generatorID>9D1FE614-4007-8395-2F8F-BE31E5230021</generatorID>
+<Attribute name="branch_code" id="2B00F082-947C-9825-E20D-3CC014C35CC5">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
+<generatorID>F9726ACA-3225-E687-9F27-9A49FD790E34</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -89,7 +90,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -98,13 +99,14 @@
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:20:16 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>7B98C994-144B-B6FF-7032-71F3FB58380A</attributeRef>
-<attributeRef>AAF16123-923A-5BDD-A619-6CB63BFBD875</attributeRef>
+<attributeRef>2B00F082-947C-9825-E20D-3CC014C35CC5</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

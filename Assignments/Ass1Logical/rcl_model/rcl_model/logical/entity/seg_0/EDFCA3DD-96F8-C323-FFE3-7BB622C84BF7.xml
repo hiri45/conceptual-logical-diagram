@@ -26,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="author_firstname " id="7DBCCB74-504B-57F7-ED56-7B98A25591D1">
 <createdBy>OH QI HEN</createdBy>
@@ -63,8 +63,9 @@
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:34:40 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

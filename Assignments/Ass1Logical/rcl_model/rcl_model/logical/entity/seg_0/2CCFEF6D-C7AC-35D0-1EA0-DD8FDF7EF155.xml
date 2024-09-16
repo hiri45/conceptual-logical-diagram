@@ -18,7 +18,7 @@
 <Attribute name="publisher_id" id="6996DE57-28DF-5D5D-BF6D-C93927657942">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-14 12:56:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[the id of the publisher which takes 6 digits]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Publisher id ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -32,7 +32,7 @@
 <Attribute name="publisher_name" id="1B445AC5-C854-176E-F95A-DEB8B28B3589">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:35:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[name of the publisher]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Publisher name ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -49,8 +49,9 @@
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-14 12:56:40 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -15,11 +15,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="catal_ddnco" id="499E6EAF-265F-11DA-6CA4-B5B2139F3036">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:25:32 UTC</createdTime>
+<Attribute name="catal_ddnco" id="1FA33778-3746-3D75-65C9-72507A279094">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:05:31 UTC</createdTime>
 <commentInRDBMS><![CDATA[Dewey Decimal Call Number ]]></commentInRDBMS>
-<generatorID>C7A4B305-5BF6-D846-8A04-B389849DB971</generatorID>
+<generatorID>87F0051B-7C1E-4387-3EC2-38CDE3FDBFF6</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -31,11 +31,11 @@
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="subject_id" id="BC2F7811-B1A4-79D0-7CDF-4ABAFF3514D1">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:26:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit number to identify subject id]]></commentInRDBMS>
-<generatorID>1647CD82-86F1-335F-C400-4CA6231843C8</generatorID>
+<Attribute name="subject_id" id="EC639CF7-F772-A05A-6319-4C24CB9A3E78">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subject id ]]></commentInRDBMS>
+<generatorID>671DDC31-E0A3-E40B-CCB3-35D5EFA59B16</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -43,8 +43,8 @@
 <referedAttribute>5B793529-42B1-6B1B-6752-1D7AEA32E4A7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -53,13 +53,14 @@
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 06:25:32 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>499E6EAF-265F-11DA-6CA4-B5B2139F3036</attributeRef>
-<attributeRef>BC2F7811-B1A4-79D0-7CDF-4ABAFF3514D1</attributeRef>
+<attributeRef>1FA33778-3746-3D75-65C9-72507A279094</attributeRef>
+<attributeRef>EC639CF7-F772-A05A-6319-4C24CB9A3E78</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

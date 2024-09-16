@@ -18,7 +18,7 @@
 <Attribute name="borrowerclass_id" id="57FBE2B6-2ACB-63DC-24EE-5A0DD414E24B">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:50:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[the id of the borrowerclass]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Borrowerclass id ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -32,7 +32,7 @@
 <Attribute name="borrowerclass_name" id="BDE9C153-F3C5-6FAE-E097-B4B523950773">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 06:44:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[name of the borrower class]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Borrowerclass name ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -46,7 +46,7 @@
 <Attribute name="borrowerclass_max_bookloans" id="3EEDEA04-AC79-FC37-2CC3-B433F04D52AA">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 06:44:55 UTC</createdTime>
-<commentInRDBMS><![CDATA[maximum number of book loans for borrower class]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Borrowerclass maximum number of books loans ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -60,7 +60,7 @@
 <Attribute name="borrowerclass_loanperiod" id="1401DAB0-AB70-0F7D-C728-CC936570751C">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 06:45:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[the loan period for borrower class]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Borrower class loan period ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -77,8 +77,9 @@
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:51:08 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -25,9 +25,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>13</dataTypePrecision>
-<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="isbn_booktype" id="D7CDDED3-1B79-3764-E90D-029DC85B329E">
 <createdBy>OH QI HEN</createdBy>
@@ -37,11 +37,17 @@
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
+<constraintName>CHKS_isbn_booktype</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="HC" description="Hard Cover "/>
+<valueDef value="LL" description="Loose Leaf"/>
+<valueDef value="PB" description="PaperBack"/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="catal_ddnco" id="D8D73562-926D-FF33-63CF-C78656950F11">
 <createdBy>OH QI HEN</createdBy>
@@ -65,12 +71,27 @@
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:28:16 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>264E94B9-4E41-611B-88D5-C96866853F4B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1AF237E7-1CA9-E985-B895-E85F657E52A0" name="CATALOGUE_NK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 11:31:03 UTC</createdTime>
+<ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
+</engineerTo>
+<newElementsIDs>D7CDDED3-1B79-3764-E90D-029DC85B329E,D8D73562-926D-FF33-63CF-C78656950F11</newElementsIDs>
+<usedAttributes>
+<attributeRef>D7CDDED3-1B79-3764-E90D-029DC85B329E</attributeRef>
+<attributeRef>D8D73562-926D-FF33-63CF-C78656950F11</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

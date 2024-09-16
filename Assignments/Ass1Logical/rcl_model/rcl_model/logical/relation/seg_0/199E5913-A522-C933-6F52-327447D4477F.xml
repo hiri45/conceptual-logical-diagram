@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_14" directorySegmentName="seg_0" id="A193C2E2-60B1-1E26-4706-FDADB028FAAE">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:34:51 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="borrower_loan_fk" directorySegmentName="seg_0" id="199E5913-A522-C933-6F52-327447D4477F">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:00:05 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
-<sourcePk>630826AB-29DC-94A7-52AD-6DB073255EBD</sourcePk>
+<sourcePk>9A1F267E-14BF-A9C7-6EAF-7E65C5D6CD1A</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>comes_from</nameOnSource>
+<nameOnSource>borrows</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>685732A7-4E4F-DEF0-4DBA-D017C6EAC25D</sourceEntity>
+<sourceEntity>D3B30F58-29F6-237C-ED6C-9873C1CA3BA5</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>D3B30F58-29F6-237C-ED6C-9873C1CA3BA5</targetEntity>
+<targetEntity>24D78BFD-8B53-FDBE-FB92-28421B3E03D1</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

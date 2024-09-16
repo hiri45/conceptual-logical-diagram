@@ -18,7 +18,7 @@
 <Attribute name="branch_code" id="5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-14 13:01:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -26,13 +26,13 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="branch_name" id="B7E611FA-0EC5-3774-E97E-2B70BB22D7EB">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:41:35 UTC</createdTime>
-<commentInRDBMS><![CDATA[the name of the branch]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Branch name]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -46,7 +46,7 @@
 <Attribute name="branch_address" id="169FF053-4EEF-1241-92DA-803B009360FD">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:41:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[the address of the branch]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Branch address ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -60,7 +60,7 @@
 <Attribute name="branch_contact_phoneno" id="FC55928E-0BD1-3C68-F4CA-1422E584247B">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:42:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[the contact phone number of the branch]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Branch contact phone number ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -71,11 +71,11 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="lga_code" id="E3F09D9F-E82B-5FCC-A123-A928D739DBAA">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:32:43 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit number for lga]]></commentInRDBMS>
-<generatorID>A8779F68-BDDA-925D-072A-34927E325237</generatorID>
+<Attribute name="lga_code" id="C5210CB3-4C0C-5FD3-DF08-E1CCAFA6C9EE">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:54:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[LGA code]]></commentInRDBMS>
+<generatorID>735EB6F3-8261-82D0-8C51-523C6D48E0D6</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -87,11 +87,11 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="manager_id" id="868DA998-FB96-4F25-C723-D967757AB64A">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:38:12 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit number which identifies manager]]></commentInRDBMS>
-<generatorID>90A9588B-DBD4-FBE6-A964-6E91A97A50B5</generatorID>
+<Attribute name="manager_id" id="FEA73C16-15A4-0066-4B37-82B7B8586FFF">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:55:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager id ]]></commentInRDBMS>
+<generatorID>39164C8C-D245-0F53-E9D1-FB92A2B57617</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -100,7 +100,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -109,8 +109,9 @@
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-14 13:08:58 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

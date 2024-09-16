@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reservation_id" id="AB2DD8E6-3F6A-C871-48FA-EF2B1EE1C0DD">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 09:30:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reservation id ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="reservation_date_time " id="3A7C87AA-B6A0-1FE3-A233-9F94B7A16ADD">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-15 08:29:30 UTC</createdTime>
@@ -42,29 +56,29 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="branch_code" id="42EB4CB8-57BF-7AE7-177E-CD1C65B84296">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:31:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
+<Attribute name="branch_code" id="5786F895-CCAF-C7EF-0BFF-75DB7C0362E4">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:55:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
 <generatorID>BFBE2E6B-D1C9-8D35-A37D-9DCB73517AB2</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
-<referedAttribute>AAF16123-923A-5BDD-A619-6CB63BFBD875</referedAttribute>
+<referedAttribute>2B00F082-947C-9825-E20D-3CC014C35CC5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="borrower_no" id="1EE1663D-EFE8-87E8-4480-E98324D395F2">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:35:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[6-digit number which identifiies borrower]]></commentInRDBMS>
-<generatorID>727EAB85-6432-1BD5-709E-393AC9EC7FF6</generatorID>
+<Attribute name="borrower_no" id="A92B1323-FE30-08B8-323D-1DA9E54B2DA6">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:01:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower number ]]></commentInRDBMS>
+<generatorID>4929AE56-4F8F-863F-6890-BF9609308E3D</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -82,12 +96,28 @@
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 06:35:34 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>1EE1663D-EFE8-87E8-4480-E98324D395F2</attributeRef>
+<attributeRef>AB2DD8E6-3F6A-C871-48FA-EF2B1EE1C0DD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CB6BCAB8-E318-3232-05DD-703DFA81ACE6" name="RESERVATION_UQ">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 09:36:30 UTC</createdTime>
+<ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
+</engineerTo>
+<newElementsIDs>5B93C54C-5B3C-D54A-F757-9ED66D3A65FE,5786F895-CCAF-C7EF-0BFF-75DB7C0362E4,A92B1323-FE30-08B8-323D-1DA9E54B2DA6</newElementsIDs>
+<usedAttributes>
+<attributeRef>5B93C54C-5B3C-D54A-F757-9ED66D3A65FE</attributeRef>
+<attributeRef>5786F895-CCAF-C7EF-0BFF-75DB7C0362E4</attributeRef>
+<attributeRef>A92B1323-FE30-08B8-323D-1DA9E54B2DA6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

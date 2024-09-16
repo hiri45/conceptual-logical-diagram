@@ -18,21 +18,21 @@
 <Attribute name="subject_id" id="5B793529-42B1-6B1B-6752-1D7AEA32E4A7">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:34:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit number to identify subject id]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Subject id ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="subject_description" id="E38958E7-C546-3560-AC48-8759280BB895">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 06:28:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[description of the subject]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Subject description]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -49,8 +49,9 @@
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:34:32 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -28,6 +28,38 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="book_copyid" id="3AC9D36E-C7A7-A642-084A-2F276E536926">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 03:35:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book copy id ]]></commentInRDBMS>
+<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>7B98C994-144B-B6FF-7032-71F3FB58380A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="A452611A-5FD7-E1C9-1B50-C99B8045CB0E">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:55:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
+<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>2B00F082-947C-9825-E20D-3CC014C35CC5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="loan_due date " id="19EAA075-CBAD-5E20-9208-D3838E16EE3E">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-15 08:26:29 UTC</createdTime>
@@ -67,43 +99,11 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="book_copyid" id="3AC9D36E-C7A7-A642-084A-2F276E536926">
+<Attribute name="borrower_no" id="737CE4E0-972B-5B6F-02F9-CF574ABF97A9">
 <createdBy>OH QI HEN</createdBy>
-<createdTime>2024-09-16 03:35:40 UTC</createdTime>
-<commentInRDBMS><![CDATA[Book copy id ]]></commentInRDBMS>
-<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
-<ownerDesignName>rcl_model</ownerDesignName>
-<engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
-</engineerTo>
-<referedAttribute>7B98C994-144B-B6FF-7032-71F3FB58380A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="branch_code" id="7099F479-9459-B068-9EC3-B85F19B2C7F3">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:31:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[7-digit code which identifies a branch]]></commentInRDBMS>
-<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
-<ownerDesignName>rcl_model</ownerDesignName>
-<engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
-</engineerTo>
-<referedAttribute>AAF16123-923A-5BDD-A619-6CB63BFBD875</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="borrower_no" id="EB19FF9E-0E29-2E43-63A7-7442B3028FFD">
-<createdBy>Hirun</createdBy>
-<createdTime>2024-09-16 06:42:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[6-digit number which identifiies borrower]]></commentInRDBMS>
-<generatorID>AC40125A-8288-3385-8F0D-2DFDE67AE2EA</generatorID>
+<createdTime>2024-09-16 08:00:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower number ]]></commentInRDBMS>
+<generatorID>199E5913-A522-C933-6F52-327447D4477F</generatorID>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -121,12 +121,15 @@
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:24:25 UTC</createdTime>
 <ownerDesignName>rcl_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>22242F00-3BCB-7830-83F0-567D57C7EF01</attributeRef>
+<attributeRef>3AC9D36E-C7A7-A642-084A-2F276E536926</attributeRef>
+<attributeRef>A452611A-5FD7-E1C9-1B50-C99B8045CB0E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
