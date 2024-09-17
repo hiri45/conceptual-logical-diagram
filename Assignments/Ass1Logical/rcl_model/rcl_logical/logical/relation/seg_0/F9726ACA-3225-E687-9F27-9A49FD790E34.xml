@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="branch_book_fk" directorySegmentName="seg_0" id="F9726ACA-3225-E687-9F27-9A49FD790E34">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:54:51 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<sourcePk>240AAA93-A976-32D5-6550-1036FF1E5799</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>owns</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7E267046-423F-C1FD-9D7C-179FE3720276</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>65CD2F4F-23EB-987A-BF4F-6C80AAC7FC51</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

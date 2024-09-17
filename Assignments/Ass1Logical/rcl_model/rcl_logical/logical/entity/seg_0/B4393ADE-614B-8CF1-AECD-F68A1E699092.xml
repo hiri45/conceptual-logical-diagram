@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4393ADE-614B-8CF1-AECD-F68A1E699092" name="CATALOGUESUBJECT">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:52:26 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="catal_ddnco" id="1FA33778-3746-3D75-65C9-72507A279094">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:05:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dewey Decimal Call Number ]]></commentInRDBMS>
+<generatorID>87F0051B-7C1E-4387-3EC2-38CDE3FDBFF6</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>3B1F3315-B5ED-44C5-8348-C496B5A2CB53</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="subject_id" id="EC639CF7-F772-A05A-6319-4C24CB9A3E78">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subject id ]]></commentInRDBMS>
+<generatorID>671DDC31-E0A3-E40B-CCB3-35D5EFA59B16</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>5B793529-42B1-6B1B-6752-1D7AEA32E4A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1892EBB8-CA88-A5F6-9394-D9A2C213A93A" name="CATALOGUESUBJECT PK">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 06:25:32 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1FA33778-3746-3D75-65C9-72507A279094</attributeRef>
+<attributeRef>EC639CF7-F772-A05A-6319-4C24CB9A3E78</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

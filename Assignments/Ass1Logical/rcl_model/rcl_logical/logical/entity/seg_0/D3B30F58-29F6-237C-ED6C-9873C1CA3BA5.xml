@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D3B30F58-29F6-237C-ED6C-9873C1CA3BA5" name="BORROWER">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-14 12:58:34 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="borrower_no" id="F8D49DC5-D3DF-7E36-F315-AC7AF3498981">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-14 12:59:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower number ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_firstname" id="C1D83B1E-EE4C-5FD4-6DAF-A8C21CF48DC4">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:43:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower first name ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_lastname" id="68B168F4-9663-5090-3CD3-FF8F514DCA31">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:43:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower last name ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_is_banned" id="FCC26099-BD48-4A41-9C3F-923CFD047F8E">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:44:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower_is_banned (T-TRUE, F-FALSE)]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<constraintName>CHKS_borrower_flag</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="FALSE"/>
+<valueDef value="T" description="TRUE"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_contact_phoneno" id="669EA459-FBC0-C656-C494-5748063A66D3">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:47:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower contact phone number ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_postcode" id="8A055CA1-650E-A4A9-AA60-35483D2D2446">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:47:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower postcode]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_state" id="9D9F8303-5674-4BB5-1666-E3316299B5D9">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:48:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower state ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_street_number" id="EA7AA8AB-40F2-B238-D041-0AEAB7AB9C01">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:49:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower street number ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_street_description" id="FD616CF3-6939-F7BB-FD1F-7A5AEECC1A94">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-16 00:49:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower street description]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="1B053F89-1753-2EB1-49B7-D9EFC6FE1D0C">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
+<generatorID>8283035A-0EA5-8220-5E45-5C3F0CA0054E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrowerclass_id" id="90802E2F-C372-FC6F-E0B2-681B623EA098">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:02:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrowerclass id ]]></commentInRDBMS>
+<generatorID>092F1349-964F-8C04-40E0-90536CAFD9F2</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>57FBE2B6-2ACB-63DC-24EE-5A0DD414E24B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9A1F267E-14BF-A9C7-6EAF-7E65C5D6CD1A" name="BORROWER PK">
+<createdBy>Hirun</createdBy>
+<createdTime>2024-09-14 13:00:04 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F8D49DC5-D3DF-7E36-F315-AC7AF3498981</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

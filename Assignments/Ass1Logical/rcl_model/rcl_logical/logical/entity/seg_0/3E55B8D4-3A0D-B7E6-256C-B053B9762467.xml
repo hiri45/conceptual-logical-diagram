@@ -1,0 +1,205 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E55B8D4-3A0D-B7E6-256C-B053B9762467" name="CATALOGUE ">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-14 09:29:48 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="catal_ddnco" id="3B1F3315-B5ED-44C5-8348-C496B5A2CB53">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-14 09:29:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dewey Decimal Call Number ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_title" id="38D627A9-0E75-9956-44EB-46F6FE18CE9C">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue title ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_descrip" id="E739C7EA-C084-BBA1-B2D7-81946F38350B">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:10:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue description]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_publication_year" id="E1540999-3049-F1A2-F761-F414FDF9F464">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:11:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue publication year]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_entry_cls" id="297E8302-2139-D6ED-7FC8-96EEE4E65C99">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:12:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue entry classification ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<constraintName>CHKS_catal_entry_classi</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Fiction "/>
+<valueDef value="R" description="Reference"/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_page_count " id="E3893E27-F038-489B-1BAA-96CDA5551D5F">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:13:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue count of pages ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_reading_level" id="8CDA3D14-95AE-41F6-EDB8-1F46FD13BF7F">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:16:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue reading level]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<constraintName>CHKS_catal_readinglvl</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>30</endValue>
+<description>Reading level from 1 (very easy ) to 30 (very difficult)</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="catal_note" id="F9548B57-56ED-3B3C-0039-427A6B9922E5">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:17:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue note ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_language" id="9106B610-CE64-362E-A8D6-A07825B44165">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue language ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="catal_edition" id="83B67737-2CC7-E848-7F6D-E0C38855FF38">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:19:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue edition ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="publisher_id" id="C86DD5BF-0C2A-D1EA-2623-5289BB3153C9">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 08:06:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Publisher id ]]></commentInRDBMS>
+<generatorID>EB6FE2DE-9423-AD4A-4332-2675DC810385</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>6996DE57-28DF-5D5D-BF6D-C93927657942</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D7A84B12-0751-B9F5-523D-50E140B4EF6E" name="CATALOGUE PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-14 09:30:10 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3B1F3315-B5ED-44C5-8348-C496B5A2CB53</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
