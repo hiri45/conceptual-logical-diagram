@@ -42,7 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="branch_code" id="A452611A-5FD7-E1C9-1B50-C99B8045CB0E">
 <createdBy>OH QI HEN</createdBy>
@@ -58,7 +58,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="loan_due date " id="19EAA075-CBAD-5E20-9208-D3838E16EE3E">
 <createdBy>OH QI HEN</createdBy>
@@ -73,27 +73,44 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="loan_return_date " id="8365B7A5-0587-7C88-25D2-202221B84BA8">
+<Attribute name="loan_return_date_ and _time " id="8365B7A5-0587-7C88-25D2-202221B84BA8">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-15 08:26:57 UTC</createdTime>
-<commentInRDBMS><![CDATA[Loan return date ]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Loan return date  and time ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="loan_return_date_time" id="B208F276-454C-D1C0-1F17-68BC7C25A2F4">
+<Attribute name="loan_fine_amount" id="6A4748E6-09D5-318F-90A3-A33F0DC60C48">
 <createdBy>OH QI HEN</createdBy>
-<createdTime>2024-09-15 08:27:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Loan return date and time ]]></commentInRDBMS>
+<createdTime>2024-09-17 02:09:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan fine amount ]]></commentInRDBMS>
 <ownerDesignName>rcl_model</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_date_finepaid " id="0BDEA10D-B9E2-5E87-5C37-AF51B70D9676">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 02:13:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan date fine paid ]]></commentInRDBMS>
+<ownerDesignName>rcl_model</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
