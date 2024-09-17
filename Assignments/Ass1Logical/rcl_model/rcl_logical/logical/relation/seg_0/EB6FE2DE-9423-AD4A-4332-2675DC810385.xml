@@ -10,7 +10,7 @@
 <identifying>false</identifying>
 <nameOnSource>publishes</nameOnSource>
 <nameOnTarget> </nameOnTarget>
-<optionalSource>true</optionalSource>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>2CCFEF6D-C7AC-35D0-1EA0-DD8FDF7EF155</sourceEntity>

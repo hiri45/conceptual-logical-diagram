@@ -10,7 +10,7 @@
 <identifying>true</identifying>
 <nameOnSource>categorised_by</nameOnSource>
 <nameOnTarget> </nameOnTarget>
-<optionalSource>true</optionalSource>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>3E55B8D4-3A0D-B7E6-256C-B053B9762467</sourceEntity>

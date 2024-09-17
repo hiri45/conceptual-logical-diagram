@@ -10,7 +10,7 @@
 <identifying>true</identifying>
 <nameOnSource>is_categorised_as</nameOnSource>
 <nameOnTarget> </nameOnTarget>
-<optionalSource>true</optionalSource>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>EDFCA3DD-96F8-C323-FFE3-7BB622C84BF7</sourceEntity>

@@ -78,16 +78,16 @@
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
-<constraintName>CHKS_catal_entry_classi</constraintName>
+<constraintName>CHKS_catal_entry_classific</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
 <listOfValues>
 <valueDef value="F" description="Fiction "/>
 <valueDef value="R" description="Reference"/>
 </listOfValues>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="catal_page_count " id="E3893E27-F038-489B-1BAA-96CDA5551D5F">
 <createdBy>OH QI HEN</createdBy>
