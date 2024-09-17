@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="020E5D32-5DCC-DB3D-8D27-7BE04A84DDD4" name="SUBJECT">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:52 UTC</createdTime>
+<generatorID>BA16C687-9250-37DA-6417-A195DD27A8DA</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="subject_id" id="30C0D972-25DA-5B7B-FE63-B84A99E8E760">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subject id ]]></commentInRDBMS>
+<generatorID>5B793529-42B1-6B1B-6752-1D7AEA32E4A7</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subject_description" id="DF6A4792-2AF3-EECA-8127-0724B5599AAD">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subject description]]></commentInRDBMS>
+<generatorID>E38958E7-C546-3560-AC48-8759280BB895</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27E4E288-CA65-517D-E6C2-D69AA1625111" name="SUBJECT_PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:52 UTC</createdTime>
+<generatorID>EDC7E727-41E7-04CF-51BB-BE360FD9DD37</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30C0D972-25DA-5B7B-FE63-B84A99E8E760"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

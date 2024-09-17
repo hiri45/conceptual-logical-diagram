@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="book_purchasing price " id="B03BB209-04C7-D9D1-7615-64707C446BA1">
 <createdBy>OH QI HEN</createdBy>

@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CF424D4-0E60-4F20-07CB-316322526F3E" name="BOOKSTATUS">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<generatorID>402EAFDB-0732-7EDB-4C7B-930A2581C306</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bookstatus_id" id="27448C91-1777-1CD5-E8D0-126C2D13861D">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[book status id ]]></commentInRDBMS>
+<generatorID>4C6C4754-70C9-2E1D-9A02-1643B42F751F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bookstatus_name" id="CC1E8D4F-FAFF-6268-C08C-8DED0121F45B">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book Status Name ]]></commentInRDBMS>
+<generatorID>6CFA7464-D589-E998-ABAB-7C7568E05D9E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B9CDE34E-636D-5076-F8B5-76A72801554B" name="BOOKSTATUS_PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<generatorID>8C208A4F-C104-9500-C517-62BD2C399D40</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27448C91-1777-1CD5-E8D0-126C2D13861D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

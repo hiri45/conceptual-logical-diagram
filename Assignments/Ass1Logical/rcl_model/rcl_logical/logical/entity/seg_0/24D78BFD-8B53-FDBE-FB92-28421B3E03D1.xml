@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="loan_id " id="657C0B0B-C4BD-DD00-0A2A-C86EE9A70CCF">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:11:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Loan id ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="loan_start_datetime " id="22242F00-3BCB-7830-83F0-567D57C7EF01">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-14 09:24:09 UTC</createdTime>
@@ -28,11 +42,11 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="book_copyid" id="3AC9D36E-C7A7-A642-084A-2F276E536926">
+<Attribute name="book_copyid" id="DB85D640-E602-92BE-9885-CB6843C82C4F">
 <createdBy>OH QI HEN</createdBy>
-<createdTime>2024-09-16 03:35:40 UTC</createdTime>
+<createdTime>2024-09-17 22:45:24 UTC</createdTime>
 <commentInRDBMS><![CDATA[Book copy id ]]></commentInRDBMS>
-<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
+<generatorID>0E46E9FB-AF8C-061B-D574-4E2941615603</generatorID>
 <ownerDesignName>rcl_logical</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -41,14 +55,14 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="branch_code" id="A452611A-5FD7-E1C9-1B50-C99B8045CB0E">
+<Attribute name="branch_code" id="9E38B37D-2826-78EF-CDC8-14A7FB0FB287">
 <createdBy>OH QI HEN</createdBy>
-<createdTime>2024-09-16 07:55:09 UTC</createdTime>
+<createdTime>2024-09-17 22:45:24 UTC</createdTime>
 <commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
-<generatorID>6A68DF46-834E-70DE-C760-41FB2814CDB0</generatorID>
+<generatorID>0E46E9FB-AF8C-061B-D574-4E2941615603</generatorID>
 <ownerDesignName>rcl_logical</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -58,7 +72,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="loan_due date " id="19EAA075-CBAD-5E20-9208-D3838E16EE3E">
 <createdBy>OH QI HEN</createdBy>
@@ -116,11 +130,11 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="borrower_no" id="737CE4E0-972B-5B6F-02F9-CF574ABF97A9">
+<Attribute name="borrower_no" id="99E46351-635D-933B-910B-4EC756BF3BDB">
 <createdBy>OH QI HEN</createdBy>
-<createdTime>2024-09-16 08:00:05 UTC</createdTime>
+<createdTime>2024-09-17 22:46:06 UTC</createdTime>
 <commentInRDBMS><![CDATA[Borrower number ]]></commentInRDBMS>
-<generatorID>199E5913-A522-C933-6F52-327447D4477F</generatorID>
+<generatorID>D0C280D7-818C-4D89-E46F-3895F070749E</generatorID>
 <ownerDesignName>rcl_logical</ownerDesignName>
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
@@ -130,7 +144,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -143,10 +157,23 @@
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="false"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>657C0B0B-C4BD-DD00-0A2A-C86EE9A70CCF</newElementsIDs>
+<usedAttributes>
+<attributeRef>657C0B0B-C4BD-DD00-0A2A-C86EE9A70CCF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="64D13FD2-2DFF-188B-51C9-58B0BA5284E1" name="LOAN_NK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:48:33 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<newElementsIDs>22242F00-3BCB-7830-83F0-567D57C7EF01,DB85D640-E602-92BE-9885-CB6843C82C4F,9E38B37D-2826-78EF-CDC8-14A7FB0FB287</newElementsIDs>
 <usedAttributes>
 <attributeRef>22242F00-3BCB-7830-83F0-567D57C7EF01</attributeRef>
-<attributeRef>3AC9D36E-C7A7-A642-084A-2F276E536926</attributeRef>
-<attributeRef>A452611A-5FD7-E1C9-1B50-C99B8045CB0E</attributeRef>
+<attributeRef>DB85D640-E602-92BE-9885-CB6843C82C4F</attributeRef>
+<attributeRef>9E38B37D-2826-78EF-CDC8-14A7FB0FB287</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

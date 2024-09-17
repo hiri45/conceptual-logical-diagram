@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B74DEB85-36E9-A26C-77AF-1E6D76159E1A" name="AUTHOR_CATALOGUE_ENTRY">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<generatorID>D1A7A493-BB80-8325-59E5-98E8EE90C951</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="catal_ddnco" id="3F0B401C-B53F-802F-2D60-DE355D664A6F">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dewey Decimal Call Number ]]></commentInRDBMS>
+<generatorID>9DFC1720-D25E-8501-259D-2FB7923DA0B7</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE26DFA3-B8BA-869A-0766-5BDF01E772EE" referredColumn="EE7E4367-5F69-DCF9-F130-54A7B8BFA503"/>
+</associations>
+</Column>
+<Column name="author_id" id="DB55A880-3F7F-5BD6-3004-1EDECE9E6AC3">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Author id ]]></commentInRDBMS>
+<generatorID>A7E95B7E-9946-C21A-53EC-8F4C81721EEA</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A7E669C-CDE9-3B74-72CC-FE3747C881E7" referredColumn="45D51AFD-4E5E-7771-6CFA-315ABF234CE4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C118225D-A3AA-7BCD-F33A-0B930B2BA557" name="AUTHOR_CATALOGUE_ENTRY_PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:51 UTC</createdTime>
+<generatorID>E2789951-3CEF-EE04-AC4B-A346201C4E8C</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F0B401C-B53F-802F-2D60-DE355D664A6F"/>
+<colUsage columnID="DB55A880-3F7F-5BD6-3004-1EDECE9E6AC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA3B8BD8-8014-CDA3-31BE-E676829018C1" name="author_author_catal_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:52 UTC</createdTime>
+<generatorID>1F3E5801-FC27-412C-2477-B05680980088</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB55A880-3F7F-5BD6-3004-1EDECE9E6AC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78BAB69B-DE72-99C7-9854-EF54F3056839" name="catal_author_catalogue_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 22:49:52 UTC</createdTime>
+<generatorID>AE315F7C-B71B-40E5-7913-426B04869CBE</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F0B401C-B53F-802F-2D60-DE355D664A6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
