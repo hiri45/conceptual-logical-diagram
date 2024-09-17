@@ -59,7 +59,7 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="borrower_is_banned" id="FCC26099-BD48-4A41-9C3F-923CFD047F8E">
+<Attribute name="borrower_borrowing_status" id="FCC26099-BD48-4A41-9C3F-923CFD047F8E">
 <createdBy>Hirun</createdBy>
 <createdTime>2024-09-16 00:44:25 UTC</createdTime>
 <commentInRDBMS><![CDATA[Borrower_is_banned (T-TRUE, F-FALSE)]]></commentInRDBMS>
@@ -67,14 +67,14 @@
 <engineerTo>
 <item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
 </engineerTo>
-<constraintName>CHKS_borrower_flag</constraintName>
+<constraintName>CHKS_borrower_borrowing_status</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <listOfValues>
-<valueDef value="F" description="FALSE"/>
-<valueDef value="T" description="TRUE"/>
+<valueDef value="B" description="Banned "/>
+<valueDef value="P" description="Permitted"/>
 </listOfValues>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4872F90C-5093-E26B-CE43-A858933DDD50" containerWithKeyObject="B146CC68-03D7-4689-219B-005AA5AABBFF" localFKIndex="8F0EF50F-2CDF-0DCD-7910-20A8DFA57A42" name="borrower_loan_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<generatorID>199E5913-A522-C933-6F52-327447D4477F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<referredTableLongName>BORROWER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A339F30B-08FC-AF62-0FDF-964896C5E50A</referredTableID>
+<keyObject>98B1EB3A-7400-06CD-701C-DAEBE1779C55</keyObject>
+<referredKeyID>98B1EB3A-7400-06CD-701C-DAEBE1779C55</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>borrower_no</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

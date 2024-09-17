@@ -69,8 +69,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="lga_contact_phoneno" id="7D5ECEBC-C2D6-F757-CD0A-5FEF36DA113F">
 <createdBy>Hirun</createdBy>

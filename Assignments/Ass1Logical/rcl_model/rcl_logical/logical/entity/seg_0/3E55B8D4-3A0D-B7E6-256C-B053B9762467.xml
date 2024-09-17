@@ -103,6 +103,20 @@
 <dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="catal_language" id="9106B610-CE64-362E-A8D6-A07825B44165">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-15 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue language ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="catal_reading_level" id="8CDA3D14-95AE-41F6-EDB8-1F46FD13BF7F">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-15 08:16:25 UTC</createdTime>
@@ -140,20 +154,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>60</dataTypeSize>
 <ownDataTypeParameters>60,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="catal_language" id="9106B610-CE64-362E-A8D6-A07825B44165">
-<createdBy>OH QI HEN</createdBy>
-<createdTime>2024-09-15 08:18:21 UTC</createdTime>
-<commentInRDBMS><![CDATA[Catalogue language ]]></commentInRDBMS>
-<ownerDesignName>rcl_logical</ownerDesignName>
-<engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="catal_edition" id="83B67737-2CC7-E848-7F6D-E0C38855FF38">
 <createdBy>OH QI HEN</createdBy>

@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA0DF7B7-8729-35CE-CB9F-C143338E5262" name="RESERVATION">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<generatorID>12B6474A-C660-C7AC-1BF3-B16E232C68D3</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reservation_id" id="1E45015B-0AFA-3086-79C1-2984022EFCE3">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reservation id ]]></commentInRDBMS>
+<generatorID>AB2DD8E6-3F6A-C871-48FA-EF2B1EE1C0DD</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reservation_date_time" id="589C55B9-384A-CABC-88E2-E41C629BAEEE">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reservation date and time ]]></commentInRDBMS>
+<generatorID>3A7C87AA-B6A0-1FE3-A233-9F94B7A16ADD</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="book_copyid" id="8074A885-B77F-DCB1-47E8-8810CE329BED">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book copy id ]]></commentInRDBMS>
+<generatorID>5B93C54C-5B3C-D54A-F757-9ED66D3A65FE</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0571B765-F535-B446-075E-F55CBAC3EDF5" referredColumn="9EC06830-FB71-AB7E-2E8D-652B8C805928"/>
+</associations>
+</Column>
+<Column name="branch_code" id="3004F509-A4B6-964D-DF8A-A6F2443E3630">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
+<generatorID>5786F895-CCAF-C7EF-0BFF-75DB7C0362E4</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0571B765-F535-B446-075E-F55CBAC3EDF5" referredColumn="CD1C8300-2954-F7E7-22D0-5592FCAAAAC5"/>
+</associations>
+</Column>
+<Column name="borrower_no" id="49256D61-AD15-40A5-0FC0-C4A252900397">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Borrower number ]]></commentInRDBMS>
+<generatorID>A92B1323-FE30-08B8-323D-1DA9E54B2DA6</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC2243D4-3D73-040A-6AA1-E6160D2C229B" referredColumn="0325D7AF-7462-B0B2-EB78-8DBDC5B71ADA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65712616-90EA-9D9E-87DD-9BDF3D91F03F" name="RESERVATION_PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<generatorID>BA7D428B-9524-E3B8-6EE6-5D1BEC01A1A2</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E45015B-0AFA-3086-79C1-2984022EFCE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76B25117-DBCF-5237-616B-6640DFCC9B67" name="RESERVATION_UQ">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<generatorID>CB6BCAB8-E318-3232-05DD-703DFA81ACE6</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8074A885-B77F-DCB1-47E8-8810CE329BED"/>
+<colUsage columnID="3004F509-A4B6-964D-DF8A-A6F2443E3630"/>
+<colUsage columnID="49256D61-AD15-40A5-0FC0-C4A252900397"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18F1EEDF-5ECB-A971-E04B-70C4363E3E38" name="book_reservation_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<generatorID>BFBE2E6B-D1C9-8D35-A37D-9DCB73517AB2</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8074A885-B77F-DCB1-47E8-8810CE329BED"/>
+<colUsage columnID="3004F509-A4B6-964D-DF8A-A6F2443E3630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CA09BD0-7FB0-92A1-3B06-6159A6047F13" name="borrower_reservation_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-17 11:17:25 UTC</createdTime>
+<generatorID>4929AE56-4F8F-863F-6890-BF9609308E3D</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49256D61-AD15-40A5-0FC0-C4A252900397"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

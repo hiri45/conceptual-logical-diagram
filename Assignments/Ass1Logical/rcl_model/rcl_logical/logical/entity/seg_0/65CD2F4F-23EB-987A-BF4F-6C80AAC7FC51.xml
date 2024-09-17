@@ -26,8 +26,24 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="2B00F082-947C-9825-E20D-3CC014C35CC5">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-16 07:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
+<generatorID>F9726ACA-3225-E687-9F27-9A49FD790E34</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
+</engineerTo>
+<referedAttribute>5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="book_purchasing price " id="B03BB209-04C7-D9D1-7615-64707C446BA1">
 <createdBy>OH QI HEN</createdBy>
@@ -76,22 +92,6 @@
 <dataTypePrecision>13</dataTypePrecision>
 <dataTypeSize>13</dataTypeSize>
 <ownDataTypeParameters>,13,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="branch_code" id="2B00F082-947C-9825-E20D-3CC014C35CC5">
-<createdBy>OH QI HEN</createdBy>
-<createdTime>2024-09-16 07:54:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
-<generatorID>F9726ACA-3225-E687-9F27-9A49FD790E34</generatorID>
-<ownerDesignName>rcl_logical</ownerDesignName>
-<engineerTo>
-<item key="EF917CCA-3311-FB0A-5003-93A67C27531A" value="true"/>
-</engineerTo>
-<referedAttribute>5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
