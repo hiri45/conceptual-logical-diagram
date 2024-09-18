@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="145E8A6B-8315-5C47-D3B7-DF9DA58A392A" name="BRANCH">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>7E267046-423F-C1FD-9D7C-179FE3720276</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="branch_code" id="55846E07-1049-D3C1-739A-9694AAED8986">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch code]]></commentInRDBMS>
+<generatorID>5EEEF73F-0A4F-C8DE-3B6A-0676C0F54D6E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_name" id="361D253C-A9E7-3FE7-6934-803ED661552C">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch name]]></commentInRDBMS>
+<generatorID>B7E611FA-0EC5-3774-E97E-2B70BB22D7EB</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_address" id="EB3547C3-24E8-EBA1-B4B4-256FBD7A7907">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch address ]]></commentInRDBMS>
+<generatorID>169FF053-4EEF-1241-92DA-803B009360FD</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_contact_phoneno" id="2D06F99E-FD0A-77A9-C245-4A915B285A17">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch contact phone number ]]></commentInRDBMS>
+<generatorID>FC55928E-0BD1-3C68-F4CA-1422E584247B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_code" id="FA684DA9-A5AD-0B4E-DED7-2C2E07D8C999">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[LGA code]]></commentInRDBMS>
+<generatorID>C5210CB3-4C0C-5FD3-DF08-E1CCAFA6C9EE</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF989EBC-9577-DA90-3C5D-132619AC8025" referredColumn="7E9FD89D-C201-4CFA-A248-410510973D1F"/>
+</associations>
+</Column>
+<Column name="manager_id" id="FC3EE374-552E-EB51-56E0-BC184C809923">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager id ]]></commentInRDBMS>
+<generatorID>FEA73C16-15A4-0066-4B37-82B7B8586FFF</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="703D6F64-A0C0-B5A6-DB8C-78E08C9C83BB" referredColumn="555FC3FD-8754-433F-149A-DE76FCE2F18F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="110EC10A-6E67-4CEF-EF1A-D8E16C9C8BB8" name="BRANCH_PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>240AAA93-A976-32D5-6550-1036FF1E5799</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55846E07-1049-D3C1-739A-9694AAED8986"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC160B6D-1F74-7928-4BC8-768B1DDB7601" name="lga_branch_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>735EB6F3-8261-82D0-8C51-523C6D48E0D6</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA684DA9-A5AD-0B4E-DED7-2C2E07D8C999"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40FCB761-835F-A393-36AA-A40B8A4C1606" name="manager_branch_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>39164C8C-D245-0F53-E9D1-FB92A2B57617</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC3EE374-552E-EB51-56E0-BC184C809923"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

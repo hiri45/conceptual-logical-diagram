@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="29B266C7-3968-40B9-435B-82B2B6FB3337" containerWithKeyObject="8EC95A9C-FE6D-2FD8-56A0-2B6EEF9A8865" localFKIndex="5D08A497-7965-3C82-CCB1-0CE5DA3FEF17" name="bookstatus_book_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>156576EA-8D0F-FEEF-01C8-B95AF23BA1DB</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<referredTableLongName>BOOKSTATUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>62BB3DDF-1A13-64DB-9A64-CAAB326A28D9</referredTableID>
+<keyObject>CFF6FFA1-8833-1DDF-A075-C482EBEEC9C4</keyObject>
+<referredKeyID>CFF6FFA1-8833-1DDF-A075-C482EBEEC9C4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>bookstatus_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

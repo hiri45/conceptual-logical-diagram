@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52313001-7F9C-03E8-6E35-B793BD6FD773" name="CATALOGUE">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>3E55B8D4-3A0D-B7E6-256C-B053B9762467</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="catal_ddnco" id="34ACB575-DFA4-472D-0688-85F072732585">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dewey Decimal Call Number ]]></commentInRDBMS>
+<generatorID>3B1F3315-B5ED-44C5-8348-C496B5A2CB53</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_title" id="BE50D542-A489-CD6D-E7EC-0D968E11F0BE">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue title ]]></commentInRDBMS>
+<generatorID>38D627A9-0E75-9956-44EB-46F6FE18CE9C</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_descrip" id="1F375E2A-28C4-3AF7-B9ED-0300A013EB5C">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue description]]></commentInRDBMS>
+<generatorID>E739C7EA-C084-BBA1-B2D7-81946F38350B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_publication_year" id="66D3A659-7269-9200-CDBA-5068CABB3022">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue publication year]]></commentInRDBMS>
+<generatorID>E1540999-3049-F1A2-F761-F414FDF9F464</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_entry_cls" id="F4A5BB62-9BA2-2672-40BD-09D0760A964D">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue entry classification ]]></commentInRDBMS>
+<generatorID>297E8302-2139-D6ED-7FC8-96EEE4E65C99</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<constraintName>CHKS_catal_entry_classific</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Fiction "/>
+<valueDef value="R" description="Reference"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_page_count" id="6378A61C-219C-6343-783F-884B17B8FC3B">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue count of pages ]]></commentInRDBMS>
+<generatorID>E3893E27-F038-489B-1BAA-96CDA5551D5F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_language" id="ABC79F84-AA12-F734-9B89-ABDE7C08F157">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue language ]]></commentInRDBMS>
+<generatorID>9106B610-CE64-362E-A8D6-A07825B44165</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_reading_level" id="79F1C148-6CB7-3C6D-193A-27BD305EFE03">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue reading level]]></commentInRDBMS>
+<generatorID>8CDA3D14-95AE-41F6-EDB8-1F46FD13BF7F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<constraintName>CHKS_catal_readinglvl</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>30</endValue>
+<description>Reading level from 1 (very easy ) to 30 (very difficult)</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="catal_note" id="4EC485A1-BC3B-7BE4-F97E-22061FD30960">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue note ]]></commentInRDBMS>
+<generatorID>F9548B57-56ED-3B3C-0039-427A6B9922E5</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_edition" id="0B0B8A35-7281-523C-DDFC-4AF6924B4F82">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catalogue edition ]]></commentInRDBMS>
+<generatorID>83B67737-2CC7-E848-7F6D-E0C38855FF38</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="publisher_id" id="6747B493-D6A9-4BB1-888B-46676FAEB57A">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Publisher id ]]></commentInRDBMS>
+<generatorID>C86DD5BF-0C2A-D1EA-2623-5289BB3153C9</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7E6AFE1-9A31-690C-D65E-E48EBE592624" referredColumn="804B5586-BCBD-74B8-F2F8-48DE73721C4B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="574C6D1C-DA7F-F575-31FD-57FB83E48A4F" name="CATALOGUE_PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>D7A84B12-0751-B9F5-523D-50E140B4EF6E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34ACB575-DFA4-472D-0688-85F072732585"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BAF99F8-4CA6-C9ED-D86B-D6ACFE8DE492" name="publisher_catalogue_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>EB6FE2DE-9423-AD4A-4332-2675DC810385</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6747B493-D6A9-4BB1-888B-46676FAEB57A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

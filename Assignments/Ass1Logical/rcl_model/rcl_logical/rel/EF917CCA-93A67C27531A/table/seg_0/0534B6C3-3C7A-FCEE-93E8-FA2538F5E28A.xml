@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0534B6C3-3C7A-FCEE-93E8-FA2538F5E28A" name="ISBN">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>DE547D10-7B01-B5AD-6CE2-FA2A0B477849</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="isbn_no" id="6C0D4C23-E333-12AF-F05E-0723F781E5ED">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[13-digit International Standard Book Numbers]]></commentInRDBMS>
+<generatorID>264E94B9-4E41-611B-88D5-C96866853F4B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isbn_booktype" id="1977CECF-1903-5CF9-A5C0-877BFE6E6EA8">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Isbn book type ]]></commentInRDBMS>
+<generatorID>D7CDDED3-1B79-3764-E90D-029DC85B329E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<constraintName>CHKS_isbn_booktype</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="HC" description="Hard Cover "/>
+<valueDef value="LL" description="Loose Leaf"/>
+<valueDef value="PB" description="PaperBack"/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="catal_ddnco" id="6BEA6984-449E-3372-CFBD-1E705E5C6780">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dewey Decimal Call Number ]]></commentInRDBMS>
+<generatorID>D8D73562-926D-FF33-63CF-C78656950F11</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="347628FA-54BF-1CF4-A42D-570414C4FE88" referredColumn="34ACB575-DFA4-472D-0688-85F072732585"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E13C7E6-746C-548E-E28F-087746078093" name="ISBN_PK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>75D8A1F0-C69B-5A04-4858-E13D9AF33DD5</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C0D4C23-E333-12AF-F05E-0723F781E5ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="439E8689-BC56-0BED-093A-616347EF207E" name="CATALOGUE_NK">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>1AF237E7-1CA9-E985-B895-E85F657E52A0</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1977CECF-1903-5CF9-A5C0-877BFE6E6EA8"/>
+<colUsage columnID="6BEA6984-449E-3372-CFBD-1E705E5C6780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AF4CD2E-E6CB-6C48-1889-DE3C5606039A" name="catalogue_isbn_fk">
+<createdBy>OH QI HEN</createdBy>
+<createdTime>2024-09-18 01:26:40 UTC</createdTime>
+<generatorID>D97DB9B6-528E-E25C-C2D7-E81B173E2657</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BEA6984-449E-3372-CFBD-1E705E5C6780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

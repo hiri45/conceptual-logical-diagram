@@ -56,7 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="branch_code" id="9E38B37D-2826-78EF-CDC8-14A7FB0FB287">
 <createdBy>OH QI HEN</createdBy>
@@ -72,7 +72,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="loan_due date " id="19EAA075-CBAD-5E20-9208-D3838E16EE3E">
 <createdBy>OH QI HEN</createdBy>
@@ -144,7 +144,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -162,7 +162,7 @@
 <attributeRef>657C0B0B-C4BD-DD00-0A2A-C86EE9A70CCF</attributeRef>
 </usedAttributes>
 </identifier>
-<identifier id="64D13FD2-2DFF-188B-51C9-58B0BA5284E1" name="LOAN_NK">
+<identifier id="64D13FD2-2DFF-188B-51C9-58B0BA5284E1" name="LOAN_UQ">
 <createdBy>OH QI HEN</createdBy>
 <createdTime>2024-09-17 22:48:33 UTC</createdTime>
 <ownerDesignName>rcl_logical</ownerDesignName>
