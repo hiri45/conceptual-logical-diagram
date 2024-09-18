@@ -1,5 +1,5 @@
-SQL> -- Group Name : G071
-SQL> -- Group Members : OHQIHEN, Hirun
+SQL> -- Group Name : GO71
+SQL> -- Group Member : OHQIHEN , HIRUN
 SQL> DROP TABLE author CASCADE CONSTRAINTS;
 
 TABLE dropped.
@@ -466,12 +466,12 @@ TABLE altered.
 SQL> CREATE TABLE loan (
   2      loan_id                     NUMBER(7) NOT NULL,
   3      loan_start_datetime         DATE NOT NULL,
-  4      loan_due_date               DATE NOT NULL,
-  5      loan_return_date__and__time DATE,
-  6      loan_fine_amount            NUMBER(3),
-  7      loan_date_finepaid          DATE,
-  8      book_copyid                 NUMBER(6) NOT NULL,
-  9      branch_code                 NUMBER(5) NOT NULL,
+  4      book_copyid                 NUMBER(6) NOT NULL,
+  5      branch_code                 NUMBER(5) NOT NULL,
+  6      loan_due_date               DATE NOT NULL,
+  7      loan_return_date__and__time DATE,
+  8      loan_fine_amount            NUMBER(3),
+  9      loan_date_finepaid          DATE,
   10      borrower_no                 NUMBER(6) NOT NULL
   11  );
 
@@ -483,6 +483,14 @@ Comment created.
 
 SQL> COMMENT ON COLUMN loan.loan_start_datetime IS
   2      'Loan start date time ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.book_copyid IS
+  2      'Book copy id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.branch_code IS
+  2      'Branch code';
 Comment created.
 
 SQL> COMMENT ON COLUMN loan.loan_due_date IS
@@ -501,14 +509,6 @@ SQL> COMMENT ON COLUMN loan.loan_date_finepaid IS
   2      'Loan date fine paid ';
 Comment created.
 
-SQL> COMMENT ON COLUMN loan.book_copyid IS
-  2      'Book copy id ';
-Comment created.
-
-SQL> COMMENT ON COLUMN loan.branch_code IS
-  2      'Branch code';
-Comment created.
-
 SQL> COMMENT ON COLUMN loan.borrower_no IS
   2      'Borrower number ';
 Comment created.
@@ -518,7 +518,7 @@ SQL> ALTER TABLE loan ADD CONSTRAINT loan_pk PRIMARY KEY ( loan_id );
 TABLE altered.
 
 SQL> ALTER TABLE loan
-  2      ADD CONSTRAINT loan_nk UNIQUE ( loan_start_datetime,
+  2      ADD CONSTRAINT loan_uq UNIQUE ( loan_start_datetime,
   3                                      book_copyid,
   4                                      branch_code );
 
