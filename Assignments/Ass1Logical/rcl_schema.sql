@@ -3,6 +3,11 @@
 --   site:      Oracle Database 12c
 --   type:      Oracle Database 12c
 
+set echo ON
+SPOOL rcl_schema_output.txt
+
+-- Group Name : G071
+-- Group Members : OHQIHEN, Hirun
 
 
 DROP TABLE author CASCADE CONSTRAINTS;
@@ -583,3 +588,5 @@ ALTER TABLE cataloguesubject
 -- 
 -- ERRORS                                   0
 -- WARNINGS                                 0
+set echo off 
+SPOOL off

@@ -1,0 +1,802 @@
+SQL> -- Group Name : G071
+SQL> -- Group Members : OHQIHEN, Hirun
+SQL> DROP TABLE author CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE author_catalogue_entry CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE book CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE bookstatus CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE borrower CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE borrowerclass CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE branch CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE catalogue CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE cataloguesubject CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE isbn CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE lga CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE loan CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE manager CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE publisher CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE reservation CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> DROP TABLE subject CASCADE CONSTRAINTS;
+
+TABLE dropped.
+
+SQL> -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+SQL> -- predefined type, no DDL - XMLTYPE
+SQL> CREATE TABLE author (
+  2      author_id        NUMBER(6) NOT NULL,
+  3      author_firstname VARCHAR2(50),
+  4      author_lastname  VARCHAR2(50)
+  5  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN author.author_id IS
+  2      'Author id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN author.author_firstname IS
+  2      'Author first name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN author.author_lastname IS
+  2      'Author last name ';
+Comment created.
+
+SQL> ALTER TABLE author ADD CONSTRAINT author_pk PRIMARY KEY ( author_id );
+
+TABLE altered.
+
+SQL> CREATE TABLE author_catalogue_entry (
+  2      catal_ddnco VARCHAR2(20) NOT NULL,
+  3      author_id   NUMBER(6) NOT NULL
+  4  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN author_catalogue_entry.catal_ddnco IS
+  2      'Dewey Decimal Call Number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN author_catalogue_entry.author_id IS
+  2      'Author id ';
+Comment created.
+
+SQL> ALTER TABLE author_catalogue_entry ADD CONSTRAINT author_catalogue_entry_pk PRIMARY KEY ( catal_ddnco,
+  2                                                                                            author_id );
+
+TABLE altered.
+
+SQL> CREATE TABLE book (
+  2      book_copyid           NUMBER(6) NOT NULL,
+  3      branch_code           NUMBER(5) NOT NULL,
+  4      book_purchasing_price NUMBER(6, 2) NOT NULL,
+  5      bookstatus_id         NUMBER(2) NOT NULL,
+  6      isbn_no               CHAR(13) NOT NULL
+  7  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN book.book_copyid IS
+  2      'Book copy id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN book.branch_code IS
+  2      'Branch code';
+Comment created.
+
+SQL> COMMENT ON COLUMN book.book_purchasing_price IS
+  2      'Book purchasing price ';
+Comment created.
+
+SQL> COMMENT ON COLUMN book.bookstatus_id IS
+  2      'book status id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN book.isbn_no IS
+  2      '13-digit International Standard Book Numbers';
+Comment created.
+
+SQL> ALTER TABLE book ADD CONSTRAINT book_pk PRIMARY KEY ( book_copyid,
+  2                                                        branch_code );
+
+TABLE altered.
+
+SQL> CREATE TABLE bookstatus (
+  2      bookstatus_id   NUMBER(2) NOT NULL,
+  3      bookstatus_name VARCHAR2(20) NOT NULL
+  4  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN bookstatus.bookstatus_id IS
+  2      'book status id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN bookstatus.bookstatus_name IS
+  2      'Book Status Name ';
+Comment created.
+
+SQL> ALTER TABLE bookstatus ADD CONSTRAINT bookstatus_pk PRIMARY KEY ( bookstatus_id );
+
+TABLE altered.
+
+SQL> CREATE TABLE borrower (
+  2      borrower_no                 NUMBER(6) NOT NULL,
+  3      borrower_firstname          VARCHAR2(50),
+  4      borrower_lastname           VARCHAR2(50),
+  5      borrower_borrowing_status   CHAR(1) NOT NULL,
+  6      borrower_contact_phoneno    CHAR(10),
+  7      borrower_postcode           CHAR(4) NOT NULL,
+  8      borrower_state              VARCHAR2(20) NOT NULL,
+  9      borrower_street_number      VARCHAR2(5) NOT NULL,
+  10      borrower_street_description VARCHAR2(100) NOT NULL,
+  11      branch_code                 NUMBER(5) NOT NULL,
+  12      borrowerclass_id            NUMBER(2) NOT NULL
+  13  );
+
+TABLE created.
+
+SQL> ALTER TABLE borrower
+  2      ADD CONSTRAINT chks_borrower_borrowing_status CHECK ( borrower_borrowing_status IN ( 'B', 'P' ) );
+
+TABLE altered.
+
+SQL> COMMENT ON COLUMN borrower.borrower_no IS
+  2      'Borrower number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_firstname IS
+  2      'Borrower first name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_lastname IS
+  2      'Borrower last name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_borrowing_status IS
+  2      'Borrower_is_banned (T-TRUE, F-FALSE)';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_contact_phoneno IS
+  2      'Borrower contact phone number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_postcode IS
+  2      'Borrower postcode';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_state IS
+  2      'Borrower state ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_street_number IS
+  2      'Borrower street number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrower_street_description IS
+  2      'Borrower street description';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.branch_code IS
+  2      'Branch code';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrower.borrowerclass_id IS
+  2      'Borrowerclass id ';
+Comment created.
+
+SQL> ALTER TABLE borrower ADD CONSTRAINT borrower_pk PRIMARY KEY ( borrower_no );
+
+TABLE altered.
+
+SQL> CREATE TABLE borrowerclass (
+  2      borrowerclass_id            NUMBER(2) NOT NULL,
+  3      borrowerclass_name          VARCHAR2(50) NOT NULL,
+  4      borrowerclass_max_bookloans NUMBER(3) NOT NULL,
+  5      borrowerclass_loanperiod    NUMBER(3) NOT NULL
+  6  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN borrowerclass.borrowerclass_id IS
+  2      'Borrowerclass id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrowerclass.borrowerclass_name IS
+  2      'Borrowerclass name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrowerclass.borrowerclass_max_bookloans IS
+  2      'Borrowerclass maximum number of books loans ';
+Comment created.
+
+SQL> COMMENT ON COLUMN borrowerclass.borrowerclass_loanperiod IS
+  2      'Borrower class loan period ';
+Comment created.
+
+SQL> ALTER TABLE borrowerclass ADD CONSTRAINT borrowerclass_pk PRIMARY KEY ( borrowerclass_id );
+
+TABLE altered.
+
+SQL> CREATE TABLE branch (
+  2      branch_code            NUMBER(5) NOT NULL,
+  3      branch_name            VARCHAR2(100) NOT NULL,
+  4      branch_address         VARCHAR2(300) NOT NULL,
+  5      branch_contact_phoneno CHAR(10) NOT NULL,
+  6      lga_code               NUMBER(5) NOT NULL,
+  7      manager_id             NUMBER(5) NOT NULL
+  8  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN branch.branch_code IS
+  2      'Branch code';
+Comment created.
+
+SQL> COMMENT ON COLUMN branch.branch_name IS
+  2      'Branch name';
+Comment created.
+
+SQL> COMMENT ON COLUMN branch.branch_address IS
+  2      'Branch address ';
+Comment created.
+
+SQL> COMMENT ON COLUMN branch.branch_contact_phoneno IS
+  2      'Branch contact phone number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN branch.lga_code IS
+  2      'LGA code';
+Comment created.
+
+SQL> COMMENT ON COLUMN branch.manager_id IS
+  2      'Manager id ';
+Comment created.
+
+SQL> ALTER TABLE branch ADD CONSTRAINT branch_pk PRIMARY KEY ( branch_code );
+
+TABLE altered.
+
+SQL> CREATE TABLE catalogue (
+  2      catal_ddnco            VARCHAR2(20) NOT NULL,
+  3      catal_title            VARCHAR2(80) NOT NULL,
+  4      catal_descrip          VARCHAR2(1000) NOT NULL,
+  5      catal_publication_year DATE NOT NULL,
+  6      catal_entry_cls        CHAR(1) NOT NULL,
+  7      catal_page_count       NUMBER(5) NOT NULL,
+  8      catal_language         VARCHAR2(20) NOT NULL,
+  9      catal_reading_level    NUMBER(2),
+  10      catal_note             VARCHAR2(60),
+  11      catal_edition          NUMBER(3),
+  12      publisher_id           NUMBER(6) NOT NULL
+  13  );
+
+TABLE created.
+
+SQL> ALTER TABLE catalogue
+  2      ADD CONSTRAINT chks_catal_entry_classific CHECK ( catal_entry_cls IN ( 'F', 'R' ) );
+
+TABLE altered.
+
+SQL> ALTER TABLE catalogue
+  2      ADD CONSTRAINT chks_catal_readinglvl CHECK ( catal_reading_level BETWEEN 1 AND 30 );
+
+TABLE altered.
+
+SQL> COMMENT ON COLUMN catalogue.catal_ddnco IS
+  2      'Dewey Decimal Call Number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_title IS
+  2      'Catalogue title ';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_descrip IS
+  2      'Catalogue description';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_publication_year IS
+  2      'Catalogue publication year';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_entry_cls IS
+  2      'Catalogue entry classification ';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_page_count IS
+  2      'Catalogue count of pages ';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_language IS
+  2      'Catalogue language ';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_reading_level IS
+  2      'Catalogue reading level';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_note IS
+  2      'Catalogue note ';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.catal_edition IS
+  2      'Catalogue edition ';
+Comment created.
+
+SQL> COMMENT ON COLUMN catalogue.publisher_id IS
+  2      'Publisher id ';
+Comment created.
+
+SQL> ALTER TABLE catalogue ADD CONSTRAINT catalogue_pk PRIMARY KEY ( catal_ddnco );
+
+TABLE altered.
+
+SQL> CREATE TABLE cataloguesubject (
+  2      catal_ddnco VARCHAR2(20) NOT NULL,
+  3      subject_id  CHAR(4) NOT NULL
+  4  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN cataloguesubject.catal_ddnco IS
+  2      'Dewey Decimal Call Number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN cataloguesubject.subject_id IS
+  2      'Subject id ';
+Comment created.
+
+SQL> ALTER TABLE cataloguesubject ADD CONSTRAINT cataloguesubject_pk PRIMARY KEY ( catal_ddnco,
+  2                                                                                subject_id );
+
+TABLE altered.
+
+SQL> CREATE TABLE isbn (
+  2      isbn_no       CHAR(13) NOT NULL,
+  3      isbn_booktype CHAR(2) NOT NULL,
+  4      catal_ddnco   VARCHAR2(20) NOT NULL
+  5  );
+
+TABLE created.
+
+SQL> ALTER TABLE isbn
+  2      ADD CONSTRAINT chks_isbn_booktype CHECK ( isbn_booktype IN ( 'HC', 'LL', 'PB' ) );
+
+TABLE altered.
+
+SQL> COMMENT ON COLUMN isbn.isbn_no IS
+  2      '13-digit International Standard Book Numbers';
+Comment created.
+
+SQL> COMMENT ON COLUMN isbn.isbn_booktype IS
+  2      'Isbn book type ';
+Comment created.
+
+SQL> COMMENT ON COLUMN isbn.catal_ddnco IS
+  2      'Dewey Decimal Call Number ';
+Comment created.
+
+SQL> ALTER TABLE isbn ADD CONSTRAINT isbn_pk PRIMARY KEY ( isbn_no );
+
+TABLE altered.
+
+SQL> ALTER TABLE isbn ADD CONSTRAINT catalogue_nk UNIQUE ( isbn_booktype,
+  2                                                        catal_ddnco );
+
+TABLE altered.
+
+SQL> CREATE TABLE lga (
+  2      lga_code                 NUMBER(5) NOT NULL,
+  3      lga_name                 VARCHAR2(100) NOT NULL,
+  4      lga_size                 NUMBER(7, 2) NOT NULL,
+  5      lga_service_contact_name VARCHAR2(80) NOT NULL,
+  6      lga_contact_phoneno      CHAR(10) NOT NULL
+  7  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN lga.lga_code IS
+  2      'LGA code';
+Comment created.
+
+SQL> COMMENT ON COLUMN lga.lga_name IS
+  2      'LGA''s name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN lga.lga_size IS
+  2      'LGA ''s size in hectares ';
+Comment created.
+
+SQL> COMMENT ON COLUMN lga.lga_service_contact_name IS
+  2      'LGA Service Contact''s name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN lga.lga_contact_phoneno IS
+  2      'LGA''s contact phone number ';
+Comment created.
+
+SQL> ALTER TABLE lga ADD CONSTRAINT lga_pk PRIMARY KEY ( lga_code );
+
+TABLE altered.
+
+SQL> CREATE TABLE loan (
+  2      loan_id                     NUMBER(7) NOT NULL,
+  3      loan_start_datetime         DATE NOT NULL,
+  4      loan_due_date               DATE NOT NULL,
+  5      loan_return_date__and__time DATE,
+  6      loan_fine_amount            NUMBER(3),
+  7      loan_date_finepaid          DATE,
+  8      book_copyid                 NUMBER(6) NOT NULL,
+  9      branch_code                 NUMBER(5) NOT NULL,
+  10      borrower_no                 NUMBER(6) NOT NULL
+  11  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN loan.loan_id IS
+  2      'Loan id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.loan_start_datetime IS
+  2      'Loan start date time ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.loan_due_date IS
+  2      'Loan due date ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.loan_return_date__and__time IS
+  2      'Loan return date  and time ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.loan_fine_amount IS
+  2      'Loan fine amount ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.loan_date_finepaid IS
+  2      'Loan date fine paid ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.book_copyid IS
+  2      'Book copy id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.branch_code IS
+  2      'Branch code';
+Comment created.
+
+SQL> COMMENT ON COLUMN loan.borrower_no IS
+  2      'Borrower number ';
+Comment created.
+
+SQL> ALTER TABLE loan ADD CONSTRAINT loan_pk PRIMARY KEY ( loan_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE loan
+  2      ADD CONSTRAINT loan_nk UNIQUE ( loan_start_datetime,
+  3                                      book_copyid,
+  4                                      branch_code );
+
+TABLE altered.
+
+SQL> CREATE TABLE manager (
+  2      manager_id              NUMBER(5) NOT NULL,
+  3      manager_firstname       VARCHAR2(30),
+  4      manager_lastname        VARCHAR2(30),
+  5      manager_contact_phoneno CHAR(10) NOT NULL,
+  6      branch_code             NUMBER(5) NOT NULL
+  7  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN manager.manager_id IS
+  2      'Manager id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN manager.manager_firstname IS
+  2      'Manager first name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN manager.manager_lastname IS
+  2      'lManager last name ';
+Comment created.
+
+SQL> COMMENT ON COLUMN manager.manager_contact_phoneno IS
+  2      'Manager contact phone number ';
+Comment created.
+
+SQL> COMMENT ON COLUMN manager.branch_code IS
+  2      'Branch code';
+Comment created.
+
+SQL> CREATE UNIQUE INDEX manager__idx ON
+  2      manager (
+  3          branch_code
+  4      ASC );
+
+INDEX created.
+
+SQL> ALTER TABLE manager ADD CONSTRAINT manager_pk PRIMARY KEY ( manager_id );
+
+TABLE altered.
+
+SQL> CREATE TABLE publisher (
+  2      publisher_id   NUMBER(6) NOT NULL,
+  3      publisher_name VARCHAR2(50) NOT NULL
+  4  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN publisher.publisher_id IS
+  2      'Publisher id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN publisher.publisher_name IS
+  2      'Publisher name ';
+Comment created.
+
+SQL> ALTER TABLE publisher ADD CONSTRAINT publisher_pk PRIMARY KEY ( publisher_id );
+
+TABLE altered.
+
+SQL> CREATE TABLE reservation (
+  2      reservation_id        NUMBER(7) NOT NULL,
+  3      reservation_date_time DATE NOT NULL,
+  4      book_copyid           NUMBER(6) NOT NULL,
+  5      branch_code           NUMBER(5) NOT NULL,
+  6      borrower_no           NUMBER(6) NOT NULL
+  7  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN reservation.reservation_id IS
+  2      'Reservation id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN reservation.reservation_date_time IS
+  2      'Reservation date and time ';
+Comment created.
+
+SQL> COMMENT ON COLUMN reservation.book_copyid IS
+  2      'Book copy id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN reservation.branch_code IS
+  2      'Branch code';
+Comment created.
+
+SQL> COMMENT ON COLUMN reservation.borrower_no IS
+  2      'Borrower number ';
+Comment created.
+
+SQL> ALTER TABLE reservation ADD CONSTRAINT reservation_pk PRIMARY KEY ( reservation_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE reservation
+  2      ADD CONSTRAINT reservation_uq UNIQUE ( book_copyid,
+  3                                             branch_code,
+  4                                             borrower_no );
+
+TABLE altered.
+
+SQL> CREATE TABLE subject (
+  2      subject_id          CHAR(4) NOT NULL,
+  3      subject_description VARCHAR2(100) NOT NULL
+  4  );
+
+TABLE created.
+
+SQL> COMMENT ON COLUMN subject.subject_id IS
+  2      'Subject id ';
+Comment created.
+
+SQL> COMMENT ON COLUMN subject.subject_description IS
+  2      'Subject description';
+Comment created.
+
+SQL> ALTER TABLE subject ADD CONSTRAINT subject_pk PRIMARY KEY ( subject_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE author_catalogue_entry
+  2      ADD CONSTRAINT author_author_catal_fk FOREIGN KEY ( author_id )
+  3          REFERENCES author ( author_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE loan
+  2      ADD CONSTRAINT book_loan_fk FOREIGN KEY ( book_copyid,
+  3                                                branch_code )
+  4          REFERENCES book ( book_copyid,
+  5                            branch_code );
+
+TABLE altered.
+
+SQL> ALTER TABLE reservation
+  2      ADD CONSTRAINT book_reservation_fk FOREIGN KEY ( book_copyid,
+  3                                                       branch_code )
+  4          REFERENCES book ( book_copyid,
+  5                            branch_code );
+
+TABLE altered.
+
+SQL> ALTER TABLE book
+  2      ADD CONSTRAINT bookstatus_book_fk FOREIGN KEY ( bookstatus_id )
+  3          REFERENCES bookstatus ( bookstatus_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE borrower
+  2      ADD CONSTRAINT borrower_branch_fk FOREIGN KEY ( branch_code )
+  3          REFERENCES branch ( branch_code );
+
+TABLE altered.
+
+SQL> ALTER TABLE loan
+  2      ADD CONSTRAINT borrower_loan_fk FOREIGN KEY ( borrower_no )
+  3          REFERENCES borrower ( borrower_no );
+
+TABLE altered.
+
+SQL> ALTER TABLE reservation
+  2      ADD CONSTRAINT borrower_reservation_fk FOREIGN KEY ( borrower_no )
+  3          REFERENCES borrower ( borrower_no );
+
+TABLE altered.
+
+SQL> ALTER TABLE borrower
+  2      ADD CONSTRAINT borrowerclass_borrower_fk FOREIGN KEY ( borrowerclass_id )
+  3          REFERENCES borrowerclass ( borrowerclass_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE book
+  2      ADD CONSTRAINT branch_book_fk FOREIGN KEY ( branch_code )
+  3          REFERENCES branch ( branch_code );
+
+TABLE altered.
+
+SQL> ALTER TABLE manager
+  2      ADD CONSTRAINT branch_manager_fk FOREIGN KEY ( branch_code )
+  3          REFERENCES branch ( branch_code );
+
+TABLE altered.
+
+SQL> ALTER TABLE author_catalogue_entry
+  2      ADD CONSTRAINT catal_author_catalogue_fk FOREIGN KEY ( catal_ddnco )
+  3          REFERENCES catalogue ( catal_ddnco );
+
+TABLE altered.
+
+SQL> ALTER TABLE cataloguesubject
+  2      ADD CONSTRAINT catalogue_cataloguesubject_fk FOREIGN KEY ( catal_ddnco )
+  3          REFERENCES catalogue ( catal_ddnco );
+
+TABLE altered.
+
+SQL> ALTER TABLE isbn
+  2      ADD CONSTRAINT catalogue_isbn_fk FOREIGN KEY ( catal_ddnco )
+  3          REFERENCES catalogue ( catal_ddnco );
+
+TABLE altered.
+
+SQL> ALTER TABLE book
+  2      ADD CONSTRAINT isbn_book_fk FOREIGN KEY ( isbn_no )
+  3          REFERENCES isbn ( isbn_no );
+
+TABLE altered.
+
+SQL> ALTER TABLE branch
+  2      ADD CONSTRAINT lga_branch_fk FOREIGN KEY ( lga_code )
+  3          REFERENCES lga ( lga_code );
+
+TABLE altered.
+
+SQL> ALTER TABLE branch
+  2      ADD CONSTRAINT manager_branch_fk FOREIGN KEY ( manager_id )
+  3          REFERENCES manager ( manager_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE catalogue
+  2      ADD CONSTRAINT publisher_catalogue_fk FOREIGN KEY ( publisher_id )
+  3          REFERENCES publisher ( publisher_id );
+
+TABLE altered.
+
+SQL> ALTER TABLE cataloguesubject
+  2      ADD CONSTRAINT subject_cataloguesubject_fk FOREIGN KEY ( subject_id )
+  3          REFERENCES subject ( subject_id );
+
+TABLE altered.
+
+SQL> -- Oracle SQL Developer Data Modeler Summary Report: 
+SQL> -- 
+SQL> -- CREATE TABLE                            16
+SQL> -- CREATE INDEX                             1
+SQL> -- ALTER TABLE                             41
+SQL> -- CREATE VIEW                              0
+SQL> -- ALTER VIEW                               0
+SQL> -- CREATE PACKAGE                           0
+SQL> -- CREATE PACKAGE BODY                      0
+SQL> -- CREATE PROCEDURE                         0
+SQL> -- CREATE FUNCTION                          0
+SQL> -- CREATE TRIGGER                           0
+SQL> -- ALTER TRIGGER                            0
+SQL> -- CREATE COLLECTION TYPE                   0
+SQL> -- CREATE STRUCTURED TYPE                   0
+SQL> -- CREATE STRUCTURED TYPE BODY              0
+SQL> -- CREATE CLUSTER                           0
+SQL> -- CREATE CONTEXT                           0
+SQL> -- CREATE DATABASE                          0
+SQL> -- CREATE DIMENSION                         0
+SQL> -- CREATE DIRECTORY                         0
+SQL> -- CREATE DISK GROUP                        0
+SQL> -- CREATE ROLE                              0
+SQL> -- CREATE ROLLBACK SEGMENT                  0
+SQL> -- CREATE SEQUENCE                          0
+SQL> -- CREATE MATERIALIZED VIEW                 0
+SQL> -- CREATE MATERIALIZED VIEW LOG             0
+SQL> -- CREATE SYNONYM                           0
+SQL> -- CREATE TABLESPACE                        0
+SQL> -- CREATE USER                              0
+SQL> -- 
+SQL> -- DROP TABLESPACE                          0
+SQL> -- DROP DATABASE                            0
+SQL> -- 
+SQL> -- REDACTION POLICY                         0
+SQL> -- TSDP POLICY                              0
+SQL> -- 
+SQL> -- ORDS DROP SCHEMA                         0
+SQL> -- ORDS ENABLE SCHEMA                       0
+SQL> -- ORDS ENABLE OBJECT                       0
+SQL> -- 
+SQL> -- ERRORS                                   0
+SQL> -- WARNINGS                                 0
+SQL> set echo off 
